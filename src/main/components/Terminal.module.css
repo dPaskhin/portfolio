@@ -1,0 +1,22 @@
+.Root {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  gap: 1rem;
+}
+
+.Line_Block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.Line {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.Output {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}

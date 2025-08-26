@@ -1,0 +1,14 @@
+.Root {
+  display: flex;
+  flex-grow: 1;
+}
+
+.Input {
+  background-color: var(--bgColor);
+  color: var(--txColor-default);
+  caret-color: var(--fgColor-default);
+  outline: none;
+  border: none;
+  flex-grow: 1;
+  padding: 0;
+}

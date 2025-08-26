@@ -1,0 +1,11 @@
+.Command_List {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.Command {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  column-gap: 5rem;
+}

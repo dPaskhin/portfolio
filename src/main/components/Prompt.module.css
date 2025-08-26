@@ -1,0 +1,7 @@
+.User_part {
+  color: var(--fgColor-attention);
+}
+
+.Main_part {
+  color: var(--fgColor-default);
+}

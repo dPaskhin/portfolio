@@ -1,0 +1,83 @@
+@import 'normalize.css';
+
+[data-theme='dark'] {
+  --bgColor: #1d2a35;
+  --fgColor-default: #05ce91;
+  --fgColor-attention: #ff9d00;
+  --txColor-default: #cbd5e1;
+  --txColor-secondary: #b2bdcc;
+  --txColor-additional: #64748b;
+}
+
+[data-theme='light'] {
+  --bgColor: #eff3f3;
+  --fgColor-default: #027474;
+  --fgColor-attention: #ff9d00;
+  --txColor-default: #334155;
+  --txColor-secondary: #475569;
+  --txColor-additional: #64748b;
+}
+
+[data-theme='blue-matrix'] {
+  --bgColor: #101116;
+  --fgColor-default: #00ff9c;
+  --fgColor-attention: #60fdff;
+  --txColor-default: #ffffff;
+  --txColor-secondary: #c7c7c7;
+  --txColor-additional: #76ff9f;
+}
+
+[data-theme='espresso'] {
+  --bgColor: #323232;
+  --fgColor-default: #e1e48b;
+  --fgColor-attention: #a5c260;
+  --txColor-default: #f7f7f7;
+  --txColor-secondary: #eeeeee;
+  --txColor-additional: #5b5b5b;
+}
+
+[data-theme='green-goblin'] {
+  --bgColor: #000000;
+  --fgColor-default: #e5e500;
+  --fgColor-attention: #04a500;
+  --txColor-default: #01ff00;
+  --txColor-secondary: #04a5b2;
+  --txColor-additional: #e50101;
+}
+
+[data-theme='ubuntu'] {
+  --bgColor: #2d0922;
+  --fgColor-default: #80d932;
+  --fgColor-attention: #80d932;
+  --txColor-default: #ffffff;
+  --txColor-secondary: #e1e9cc;
+  --txColor-additional: #cdcdcd;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  background-color: var(--bgColor);
+  color: var(--txColor-default);
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+a {
+  color: var(--fgColor-attention);
+  text-decoration-color: var(--fgColor-attention);
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 0.125rem;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration-style: solid;
+  }
+}
+
+code {
+  color: var(--fgColor-default);
+}
