@@ -1,5 +1,5 @@
 import type { SimpElement } from '@simpreact/simpreact';
-import { syncRerenderLocker } from '@simpreact/simpreact/internal';
+import { batchingRerenderLocker } from '@simpreact/simpreact/internal';
 
 import css from './Terminal.module.css';
 import { Prompt } from './Prompt.tsx';
@@ -36,7 +36,7 @@ export function Terminal(): SimpElement {
   }, []);
 
   const handleChange = () => {
-    syncRerenderLocker.lock();
+    batchingRerenderLocker.lock();
 
     setValue('');
 
@@ -67,7 +67,7 @@ export function Terminal(): SimpElement {
       ]);
     }
 
-    syncRerenderLocker.flush();
+    batchingRerenderLocker.flush();
 
     window.scrollTo(0, document.body.scrollHeight);
   };
