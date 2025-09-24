@@ -1,10 +1,10 @@
 import type { SimpElement } from '@simpreact/simpreact';
+import { useState } from '@simpreact/simpreact/hooks';
 import { batchingRerenderLocker } from '@simpreact/simpreact/internal';
 
 import css from './Terminal.module.css';
 import { Prompt } from './Prompt.tsx';
 import { TerminalInput } from './TerminalInput.tsx';
-import { useState } from '../useState.ts';
 import { useEffect, useRef } from '@simpreact/simpreact/hooks';
 import { Output } from './Output.tsx';
 
